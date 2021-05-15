@@ -1,0 +1,82 @@
+
+Bhawna Gunwani:
+
+Apache Tomcat 9.0
+MySQL Installation
+
+- JDBC Connectivity
+- Hibernate ORM Tool
+- JSP and Servlets
+	GET POST Request
+	ServletCOnfig and ServletContext
+	RequestDispatcher
+	Filters and Listeners
+- Web Services
+
+--------------------------------------------------
+
+We can create web project:
+
+	- Dynamic Web Project
+	- Maven Project
+	
+--------------------------------------------------
+
+ JSP Declaration Tags: 
+ 
+	To declare fields and methods
+ 
+	<!-- Declaration Tag -->
+	<%! int number=10; %>
+	<%! 
+		int addition(int num1, int num2) {
+			return num1 + num2;
+		} 
+	%>
+
+------------------------------ 
+ 
+ JSP Expression Tags: 
+ 
+	To access the fields and attributes (print the values)
+	The code written in the expression tag is printed by output stream as response.
+	<!-- Expression Tag -->
+	<h4><%= "Value of Number : " + number %></h4>
+	<h4><%= "Result : " + addition(100, 200) %></h4>
+	
+------------------------------
+
+ JSP Scriplet Tags:
+	
+	This tag is used to execute java source code in JSP.
+	
+	<!-- Scriptlet Tag -->
+	<h4><% out.print("Hello Users");  %></h4>
+	<%
+		String name = request.getParameter("username");
+		out.print("Welcome " + name + "!!");
+	%>
+ 
+------------------------------
+
+	JSP Directives:
+	
+	1. Page Directive: defines attributes that can be applied to entire page.
+		
+	<!-- Page Directive: Import -->
+	<%@ page import="java.util.Date" %>	
+		
+	2. Include Directive: used to include the contents of any resource.
+	
+	<!-- Header of the Page -->
+	<%@ include file="header.jsp" %>
+	<!-- Footer of the Page -->
+	<%@ include file="footer.jsp" %>
+	
+	3. Taglib Directive
+	
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	
+	<c:out value="${'Welcome Everyone'}" />
+	
+---------------------------------
