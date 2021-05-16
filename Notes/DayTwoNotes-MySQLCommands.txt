@@ -1,0 +1,86 @@
+
+User Layer
+Business Layer
+Data Access Layer
+
+------------------
+
+JDBC (Java Database Connectivity):
+
+------------------
+
+mysql fundamental commands:
+
+-- To show all existing databases
+
+	show databases;
+	
+-- To create new database	
+	
+	CREATE DATABASE trainingdb;
+	
+-- To use databases that is already created	
+	
+	use trainingdb;
+	
+-- To create new employee table	
+	
+	create table Employee
+	(EmpID int primary key,
+	EmpName varchar(20),
+	salary float);
+	
+-- To see the structure of employee table	
+	
+	describe Employee;
+	
+-- insert new records in table	
+	
+	insert into Employee values(101, 'King', 12456.78);
+	insert into Employee values(102, 'Kochhar', 23456.78);
+	insert into Employee values(103, 'Sarah', 34000);
+	insert into Employee values(104, 'Gautam', 23000);
+	insert into Employee values(105, 'Roger', 2500);
+	
+-- To fetch all employee data	
+	
+	SELECT * FROM Employee;
+	
+-- To delete all records	
+
+	DELETE FROM Employee; 
+	
+-- To delete specific record:
+	
+	DELETE FROM Employee WHERE EmpID = 102;
+
+-- To update all records:
+
+	UPDATE Employee
+	SET salary = 50000;
+	
+-- To update specific record:
+
+	UPDATE Employee
+	SET salary = 34000
+	WHERE EmpID IN (103, 104);
+	
+-- To check user connected:
+
+	SELECT user();
+	
+-- To check the port number on which mysql services are running:
+
+	SHOW VARIABLES WHERE variable_name = 'port';
+
+
+
+
+
+
+
+
+
+
+
+
