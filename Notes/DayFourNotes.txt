@@ -1,0 +1,42 @@
+
+ServletConfig
+ServletContext
+RequestDispatcher
+Filters
+
+----------------------------------------------
+
+Session Management Techniques
+Stateful Application using Sessions
+Stateful Application using Cookies
+Working with Servlet + JSP + JDBC + MySQL
+
+----------------------------------------------
+
+Cookie:
+
+	Non-Persistent Cookie:
+		- It is valid for one single session.
+		- It removes each time when user closes the browser.
+		
+	Persistent Cookie:
+		- It is valid for multiple sessions.
+		- It is removed when user deletes them or clear them.
+		
+----------------------------------------------
+
+	use trainingdb;
+	
+	create table departments
+	(deptid int primary key auto_increment,
+	deptname varchar(200),
+	deptlocation varchar(200))
+	
+	insert into departments(deptname, deptlocation) values('Sales', 'Mumbai');
+	insert into departments(deptname, deptlocation) values('Testing', 'Delhi');
+	insert into departments(deptname, deptlocation) values('Development', 'Mumbai');
+	insert into departments(deptname, deptlocation) values('Admininstration', 'Hyderabad');
+	
+	select * from departments;
+	
+-----------------------------------------------
