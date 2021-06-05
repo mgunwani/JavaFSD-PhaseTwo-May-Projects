@@ -1,0 +1,3 @@
+com\bhawnagunwani\models\Category.class
+com\bhawnagunwani\utils\HibernateUtils.class
+com\bhawnagunwani\Application.class
