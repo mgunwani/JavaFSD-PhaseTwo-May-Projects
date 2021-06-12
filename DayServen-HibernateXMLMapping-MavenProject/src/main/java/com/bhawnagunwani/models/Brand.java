@@ -50,7 +50,7 @@ public class Brand {
 
 	@Override
 	public String toString() {
-		return "Brand [id=" + id + ", name=" + name + ", products=" + products + "]";
+		return "Brand [id=" + id + ", name=" + name + "]";
 	}
 
 }

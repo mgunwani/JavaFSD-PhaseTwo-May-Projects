@@ -12,15 +12,15 @@
 		<property name="connection.password">password@123456</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="show_sql">true</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 		
 		<!-- Mapping File Reference for Many-To-Many Relationship -->
-		<mapping resource="Group.hbm.xml" />
-		<mapping resource="User.hbm.xml" />
+		<!-- <mapping resource="Group.hbm.xml" /> -->
+		<!-- <mapping resource="User.hbm.xml" /> -->
 		
 		<!-- Mapping File Reference for One-To-Many Relationship -->
-		<!-- <mapping resource="Brand.hbm.xml" /> -->
-		<!-- <mapping resource="Product.hbm.xml" /> -->
+		<mapping resource="Brand.hbm.xml" />
+		<mapping resource="Product.hbm.xml" />
 		
 		<!-- Mapping File Reference for Category -->
 		<!-- <mapping resource="Category.hbm.xml" /> -->
